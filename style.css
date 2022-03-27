@@ -165,3 +165,30 @@ img {
   border-radius: 0;
   max-height: 10vh;
 }
+
+.main-projects-container{
+  background-color: red;
+  width: 90%;
+  margin: auto;
+}
+
+.main-projects-container h1{
+  text-align: center;
+}
+
+#projects-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 10px; */
+  background-color: purple;
+}
+
+.projects-box{
+  max-width: 40vw;
+}
+
+#projects{
+  min-height: 70vh;
+  background-color: var(--main-color);
+}
