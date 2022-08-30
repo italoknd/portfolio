@@ -152,16 +152,17 @@ img {
   border-bottom: 4px solid var(--composition-color);
 }
 
-.tecnologies {
+.stack-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 30vw;
+  margin: 2.5em 0;
 }
 
-.tec-imgs {
+.stack-imgs {
   border-radius: 0;
   max-height: 10vh;
 }
