@@ -6,6 +6,7 @@
   list-style-type: none;
   text-decoration: none;
   font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -23,6 +24,11 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
 }
 
 p {
@@ -167,17 +173,17 @@ img {
   max-height: 10vh;
 }
 
-.main-projects-container{
+.main-projects-container {
   background-color: red;
   width: 90%;
   margin: auto;
 }
 
-.main-projects-container h1{
+.main-projects-container h1 {
   text-align: center;
 }
 
-#projects-container{
+#projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -185,11 +191,11 @@ img {
   background-color: purple;
 }
 
-.projects-box{
+.projects-box {
   max-width: 40vw;
 }
 
-#projects{
+#projects {
   min-height: 70vh;
   background-color: var(--main-color);
 }
