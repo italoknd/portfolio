@@ -159,6 +159,10 @@ img {
   border-bottom: 4px solid var(--composition-color);
 }
 
+#stack-title {
+  display: none;
+}
+
 .stack-container {
   display: flex;
   flex-direction: row;
@@ -323,6 +327,10 @@ img {
 }
 
 @media (max-width: 1099px) {
+  .stack-container {
+    width: 35vw;
+  }
+
   #projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -334,6 +342,22 @@ img {
 }
 
 @media (max-width: 800px) {
+  #stack-title {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+
+  #skills > p {
+    width: 88vw;
+    overflow-x: hidden;
+  }
+
+  .stack-container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   #projects-container {
     display: grid;
     grid-template-columns: 1fr;
