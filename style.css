@@ -342,6 +342,25 @@ img {
 }
 
 @media (max-width: 800px) {
+  nav {
+    display: grid;
+    height: 15vh;
+  }
+
+  nav > h2{
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .nav-list{
+    display: flex;
+    justify-content: center;
+  }
+
+  #skill-title{
+    font-size: 2em;
+  }
   #stack-title {
     text-align: center;
     margin: auto;
