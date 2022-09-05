@@ -337,7 +337,7 @@ img {
   }
 
   #greetings > h2 {
-    min-width: 100vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -362,6 +362,27 @@ img {
 }
 
 @media (max-width: 800px) {
+  .info-container{
+    width: 96.5vw;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column; */
+  }
+
+  #greetings{
+    max-width: 88vw;
+  }
+
+  #greetings > h2{
+    max-width: 88vw;
+  }
+
+  #greetings > h1{
+    min-width: 60vw;
+    text-align: center;
+  }
+
   nav {
     display: grid;
     height: 15vh;
