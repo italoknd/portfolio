@@ -361,11 +361,12 @@ img {
   }
 }
 
-@media (max-width: 800px) and (min-width: 500px) {
+@media (max-width: 800px) {
   nav {
     display: grid;
     height: 15vh;
     overflow-x: hidden;
+    max-width: 98vw;
   }
 
   nav > h2 {
@@ -376,10 +377,8 @@ img {
     margin-left: -0.03em;
   }
 
-  .nav-list {
-    display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    justify-content: space-between;
+  .nav-list > li {
+    margin: auto;
   }
 
   #skill-title {
@@ -414,13 +413,5 @@ img {
 
   .project-btn {
     max-width: 20vw;
-  }
-
-  @media (max-width: 499px) {
-    .nav-list {
-      display: grid;
-      grid-template-columns: 20.5vw 20.5vw 20.5vw 20.5vw 20.5vw;
-      justify-content: space-around;
-    }
   }
 }
