@@ -44,6 +44,8 @@ nav {
   height: 10vh;
   background: var(--main-color);
   color: white;
+  background-image: linear-gradient(135deg, var(--secundary-color), var(--main-color));
+  border-bottom: 2px solid var(--secundary-color);
 }
 
 nav > h2 {
@@ -265,7 +267,7 @@ img {
 
 .projects-box {
   max-width: 30vw;
-  height: 45vh;
+  max-height: 45vh;
 
   background-color: var(--secundary-color);
   border-radius: 0.5em;
@@ -362,14 +364,11 @@ img {
 }
 
 @media (max-width: 800px) {
+  
   .info-container{
     width: 96.5vw;
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column; */
   }
-
+  
   #greetings{
     max-width: 88vw;
   }
