@@ -29,7 +29,7 @@ body {
 
 .header {
   position: fixed;
-  width: 100vw;
+  width: 98.9vw;
 }
 
 p {
@@ -387,7 +387,7 @@ img {
     display: grid;
     height: 15vh;
     overflow-x: hidden;
-    max-width: 98vw;
+    width: 100vw;
   }
 
   nav > h2 {
@@ -405,6 +405,7 @@ img {
   #skill-title {
     font-size: 2em;
   }
+
   #stack-title {
     text-align: center;
     margin: auto;
