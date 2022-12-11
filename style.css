@@ -27,6 +27,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .header {
   position: fixed;
   width: 98.9vw;
@@ -187,14 +192,13 @@ img {
   padding-top: 5vh;
 }
 
-#projects-header {
+#projects-header,
+#contact-header {
   padding: 2vh 0;
   color: white;
   font-size: 1.5em;
   font-weight: normal;
-  /* border-bottom: 4px solid var(--composition-color); */
-  width: 6.25em;
-  margin: auto;
+  text-align: center;
 }
 
 .main-projects-container {
@@ -212,6 +216,13 @@ img {
   grid-gap: 1.5em;
   color: white;
   padding: 1em 0 2.5em 0;
+}
+
+#contacts-container {
+  display: flex;
+  color: white;
+  padding: 1em 0 2.5em 0;
+  justify-content: center;
 }
 
 #project-1 > h2 {
@@ -247,7 +258,8 @@ img {
   font-weight: 500;
 }
 
-.project-btn {
+.project-btn,
+.contact-btn {
   padding: 0.5em 0.5em;
   margin: 0 0 0 1.5em;
   width: 9em;
@@ -263,7 +275,8 @@ img {
   transition: 0.5s;
 }
 
-.project-btn:hover {
+.project-btn:hover,
+.contact-btn:hover {
   background-color: var(--composition-color);
   color: white;
   border: 2px solid var(--composition-color);
@@ -277,9 +290,35 @@ img {
   border-radius: 0.5em;
 }
 
+.contacts-box {
+  width: 60vw;
+  height: 12vh;
+
+  background-color: var(--main-color);
+  border-radius: 0.5em;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+
 #projects {
   min-height: 70vh;
   background-color: var(--main-color);
+}
+#get-in-touch {
+  min-height: 25vh;
+  width: 100vw;
+  background-color: var(--secundary-color);
+}
+
+.contacts-section > p {
+  text-align: center;
+  color: white;
+  font-weight: 500;
 }
 
 /*  RESPONSIVIDADE  */
@@ -439,5 +478,10 @@ img {
 
   .project-btn {
     max-width: 20vw;
+  }
+
+  .contact-btn{
+    width: 5em;
+    margin: auto;
   }
 }
