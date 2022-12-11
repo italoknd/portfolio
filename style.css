@@ -87,6 +87,10 @@ li a:hover {
 }
 
 /* SECTIONS */
+#show-on-mobile {
+  display: none;
+}
+
 #about-me {
   min-height: 70vh;
   background: var(--main-color);
@@ -371,6 +375,10 @@ img {
 }
 
 @media (max-width: 1099px) {
+  #greetings > #introduction{
+    visibility: hidden;
+  }
+
   .info-container > #greetings {
     width: 100vw;
   }
@@ -378,6 +386,7 @@ img {
   #greetings > .title {
     width: 50vw;
     margin: 0.6em auto;
+    text-align: center;
     overflow-x: hidden;
   }
 
@@ -480,8 +489,12 @@ img {
     max-width: 20vw;
   }
 
-  .contact-btn{
-    width: 5em;
+  .contact-btn {
+    width: 4em;
     margin: auto;
+  }
+  
+  .svg-width{
+    width: 20px;
   }
 }
