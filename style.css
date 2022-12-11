@@ -262,6 +262,10 @@ img {
   font-weight: 500;
 }
 
+.desc-project{
+  min-height: 22vh;
+}
+
 .project-btn,
 .contact-btn {
   padding: 0.5em 0.5em;
@@ -493,7 +497,7 @@ img {
     width: 4em;
     margin: auto;
   }
-  
+
   .svg-width{
     width: 20px;
   }
