@@ -10,8 +10,8 @@
 }
 
 :root {
-  --main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --main-color: #2e2f34;
   --secundary-color: #212225;
   --composition-color: #3c91e6;
@@ -41,52 +41,7 @@ p {
   text-align: justify;
 }
 
-/*  NAVBAR SETTINGS */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  background: var(--main-color);
-  color: white;
-  background-image: linear-gradient(
-    135deg,
-    var(--secundary-color),
-    var(--main-color)
-  );
-  border-bottom: 2px solid var(--secundary-color);
-}
-
-nav > h2 {
-  margin-left: 1em;
-  letter-spacing: 1.5px;
-}
-
-h2 > span {
-  color: var(--composition-color);
-}
-
-.nav-list {
-  display: flex;
-}
-
-.nav-list li {
-  margin-right: 2em;
-  padding: 0.7em;
-}
-
-li a {
-  color: white;
-  transition: 0.3s;
-  border-bottom: 2px solid var(--main-color);
-}
-
-li a:hover {
-  color: var(--text-hover);
-  border-bottom: 2px solid var(--text-hover);
-}
-
-/* SECTIONS */
+/*SECTIONS*/
 #show-on-mobile {
   display: none;
 }
@@ -262,7 +217,7 @@ img {
   font-weight: 500;
 }
 
-.desc-project{
+.desc-project {
   min-height: 22vh;
 }
 
@@ -379,7 +334,7 @@ img {
 }
 
 @media (max-width: 1099px) {
-  #greetings > #introduction{
+  #greetings > #introduction {
     visibility: hidden;
   }
 
@@ -498,7 +453,7 @@ img {
     margin: auto;
   }
 
-  .svg-width{
+  .svg-width {
     width: 20px;
   }
 }
