@@ -1,7 +1,7 @@
 <template>
   <section id="get-in-touch">
     <div class="contacts-section">
-      <h1 id="contact-header">Contact</h1>
+      <h1 class="section-header">Contact</h1>
       <p>Get in touch with me through my social medias:</p>
       <div id="contacts-container">
         <div class="contacts-box" id="project-1">
