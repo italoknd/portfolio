@@ -1,5 +1,13 @@
 export const cards_infos = [
   {
+    project_title: "File Uploader",
+    short_description:
+      "<p>The file uploader was a project where I've used Vue 3 with Composition API TypeScript and Vite. In this project I've learned more about drag and drop events.</p> <br/> <p>The UI inspiration came from some images of other file uploaders that I've seen on the internet and the purpose of this project in the future is to let it be available on NPM as a plugin where other developers can use to handle files, transforming them into base 64 files on upload without much struggle.</p>",
+    has_access_link: true,
+    quick_access_link: "https://italoknd.github.io/vue-drag-and-drop/",
+    project_on_github: "https://github.com/italoknd/vue-drag-and-drop",
+  },
+  {
     project_title: "Modern Twine",
     short_description:
       "The modern twine was a project that helped me to understand more about the parallax effect. That was an exercise to the conclusion of one module of the HTML and CSS basic course. This project is totally responsive.",
@@ -12,7 +20,8 @@ export const cards_infos = [
     short_description:
       "That was the final project of a course that i did on youtube about Vue JS. In this project is possible to make some API requests using an fake API (hehehe) like order something editing and deleting an order. This project is totally responsive.",
     has_access_link: true,
-    quick_access_link: "https://make-your-burger-owlwsv4hy-italoknd.vercel.app/",
+    quick_access_link:
+      "https://make-your-burger-owlwsv4hy-italoknd.vercel.app/",
     project_on_github: "https://github.com/italoknd/projeto-make-your-burger",
   },
   {
