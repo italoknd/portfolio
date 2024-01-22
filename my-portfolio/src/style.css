@@ -31,6 +31,13 @@ body {
   user-select: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+.not-allowed {
+  cursor: not-allowed;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -44,6 +51,7 @@ a {
 p {
   text-align: justify;
 }
+
 
 /*SECTIONS*/
 #show-on-mobile {
@@ -159,11 +167,25 @@ img {
   text-align: center;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+
 /*CONTACTS  */
 #get-in-touch {
   min-height: 25vh;
   width: 100vw;
   background-color: var(--secundary-color);
+}
+
+#contacts-container {
+  display: flex;
+  color: white;
+  padding: 1em 0 2.5em 0;
+  justify-content: center;
 }
 
 .contacts-section > p {
@@ -174,7 +196,7 @@ img {
 
 /*  RESPONSIVIDADE  */
 @media (min-width: 1369px) {
-  .projects-box {
+  .project-box {
     min-height: 30vh;
     max-height: 45vh;
   }
@@ -186,7 +208,7 @@ img {
     justify-content: center;
   }
 
-  .projects-box {
+  .project-box {
     min-height: 60vh;
   }
 
@@ -257,7 +279,7 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .projects-box {
+  .project-box {
     min-height: 65vh;
   }
 }
@@ -326,7 +348,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .projects-box {
+  .project-box {
     max-width: 80vw;
     min-width: 30vh;
     min-height: 35vh;
