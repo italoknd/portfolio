@@ -197,20 +197,15 @@ img {
 }
 
 /*  RESPONSIVIDADE  */
-@media (min-width: 1369px) and (max-width: 1720px) {
-  .project-description {
-    height: 150px;
+@media (min-width: 1369px) and (max-width: 1650px) {
+  .card-container-buttons{
+    flex-direction: column;
+    padding-bottom: 0;
+    background: red;
   }
 
-  .btn-container {
-    background-color: red;
-    flex-direction: column;
-  }
-  
-  .controls-container {
+  .project-btn {
     width: 100%;
-    padding-bottom: 0;
-    margin: 0;
   }
 }
 
