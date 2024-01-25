@@ -2,16 +2,13 @@
   <div>
     <section id="projects">
       <h1 class="section-header">Projects</h1>
+
       <div class="main-projects-container">
-        <div
-          id="projects-container"
-          v-for="(card, index) in cards"
-          :key="index"
-        >
-          <div class="project-box" id="project">
+        <div v-for="(card, index) in cards" :key="index">
+          <div class="project-box">
             <h2>{{ card.project_title }}</h2>
-            <p v-html="card.short_description" class="desc-project" />
-            <div class="btn-container">
+            <p v-html="card.short_description" class="project-description" />
+            <div class="card-container-buttons">
               <a
                 :href="
                   !card.has_access_link ? '#projects' : card.quick_access_link
@@ -59,3 +56,8 @@ const checkIfHasAccessLink = (param: boolean) => {
   }, 4000);
 };
 </script>
+<style scoped>
+.project-btn {
+  width: 220px;
+}
+</style>
