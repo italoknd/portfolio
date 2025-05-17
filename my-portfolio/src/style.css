@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /*GLOBAL SETTINGS*/
 * {
   padding: 0;
@@ -16,6 +18,7 @@
   --secundary-color: #212225;
   --composition-color: #3c91e6;
   --composition-color-hover: #1778da;
+  --light-mode-composition-color: #1778da;
   --text-hover: #d3d5d7;
 }
 
