@@ -6,8 +6,11 @@ import Contact from "../components/Contact.vue";
 </script>
 <template>
   <div>
-    <AboutMe />
-    <!-- <Skills />
+    <div class="border-[0.5px] border-gray-600"></div>
+    <AboutMe class="my-5 p-4" />
+    <div class="border-[0.5px] border-gray-600"></div>
+    <Skills class="my-5 p-4" />
+    <!-- 
     <MyProjects />
     <Contact /> -->
   </div>
