@@ -159,6 +159,12 @@ let techs = ref<IStack[]>([
     predominantColorOnHover: "hover:text-white hover:bg-[#ED1B24]/70",
     isHovering: false,
   },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    techName: "MySQL",
+    predominantColorOnHover: "hover:text-white hover:bg-[#00618A]/70",
+    isHovering: false,
+  },
 ]);
 </script>
 
