@@ -2,37 +2,33 @@
   <section id="about-me">
     <div class="grid md:grid-cols-2">
       <div>
-        <!-- <img
-          class="border-[0.5px] border-gray-600 bg-gray-200 rounded-md shadow-xl/30"
-          src="../assets/cp-perfil-1_cleanup-removebg-preview.png"
-          alt="Me"
-        /> -->
-        <Animation class="h-[800px] w-[800px]" />
+        <Animation class="m-auto h-[300px] w-[300px] md:h-[800px] md:w-[800px]" />
       </div>
       <div class="flex justify-end items-center leading-relaxed max-w-2xl">
         <div>
-          <h2 class="text-4xl font-semibold text-gray-800 fade-in">
+          <h2
+            class="text-center md:text-left text-4xl font-semibold text-gray-800 md:fade-in fade-in-mobile"
+          >
             <span>Italo </span>
             <span class="text-[var(--light-mode-composition-color)]"
               >Pedroza</span
             >
           </h2>
-          <h1 class="text-2xl font-semibold text-gray-800 fade-in">
+          <h1
+            class="text-center md:text-left text-2xl font-semibold text-gray-800 md:fade-in fade-in-mobile"
+          >
             <span class="text-[var(--light-mode-composition-color)]"
               >Front-end</span
             >
             Developer
           </h1>
-          <div class="typewriter text-gray-800 font-medium mt-2">
-            <p class="typewriter-line">
+          <div class="text-gray-800 font-medium mt-2">
+            <p class="description-fade-in">
               Hello! Welcome. I am a front-end developer and here you will find
-              some of the projects that I have
+              some of the projects that I have been building with dedication,
+              creativity and that touch of curiosity that every dev carries.
+              Feel free to explore my projects! :D
             </p>
-            <p class="typewriter-line">
-              been building with dedication, creativity and that touch of
-              curiosity that every dev carries.
-            </p>
-            <p class="typewriter-line">Feel free to explore my projects! :D</p>
           </div>
         </div>
       </div>
@@ -47,6 +43,10 @@ import Animation from "./Animation.vue";
   animation: fade-in 3s linear;
 }
 
+.fade-in-mobile {
+  animation: fade-in-mobile 3s linear;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -58,54 +58,25 @@ import Animation from "./Animation.vue";
   }
 }
 
-.typewriter-line {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-}
-
-.typewriter-line:nth-child(1) {
-  animation: typing 2s steps(113) forwards, blink 1s step-end infinite;
-  animation-delay: 0s;
-}
-
-.typewriter-line:nth-child(2) {
-  animation: typing 2s steps(97) forwards, blink 1s step-end infinite;
-  animation-delay: 2s;
-}
-
-.typewriter-line:nth-child(3) {
-  animation: typing-last-child 1.5s steps(37) forwards,
-    blink 1s step-end infinite;
-  animation-delay: 4s;
-}
-
-@keyframes typing {
+@keyframes fade-in-mobile {
   from {
-    width: 0%;
-    border-right: 1px solid black;
     opacity: 0;
   }
   to {
-    width: 100%;
     opacity: 1;
-  }
-}
-@keyframes typing-last-child {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 36.5%;
-    border-right: 1px solid black;
   }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
+.description-fade-in {
+  animation: description-fade-in 3s linear;
+}
+
+@keyframes description-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
