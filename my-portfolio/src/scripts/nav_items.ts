@@ -1,10 +1,10 @@
 import { INavItems } from "../interface";
 
 export const items: INavItems[] = [
-  {
-    itemName: "Home",
-    hrefName: "",
-  },
+  // {
+  //   itemName: "Home",
+  //   hrefName: "#home-logo",
+  // },
   {
     itemName: "About me",
     hrefName: "#home",
