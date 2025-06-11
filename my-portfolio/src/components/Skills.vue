@@ -177,14 +177,22 @@ let techs = ref<IStack[]>([
 <template>
   <section class="bg-gray-50">
     <div id="skills">
-      <h2 class="text-4xl font-semibold text-blue-600 mb-4 text-center md:text-left">Skills</h2>
+      <h2
+        class="text-4xl font-semibold text-blue-600 mb-4 text-center md:text-left"
+      >
+        Skills
+      </h2>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-      <div @mouseover="tech.isHovering = true" @mouseleave="tech.isHovering = false" v-for="(tech, index) in techs"
+      <div
+        @mouseover="tech.isHovering = true"
+        @mouseleave="tech.isHovering = false"
+        v-for="(tech, index) in techs"
         :key="index"
         :class="`
              ${tech.predominantColorOnHover} hover:scale-105 flex justify-between
-             cursor-pointer border border-gray-200 rounded-lg shadow-lg bg-white p-6 duration-300 relative overflow-hidden group`">
+             cursor-pointer border border-gray-200 rounded-lg shadow-lg bg-white p-6 duration-300 relative overflow-hidden group`"
+      >
         <!-- Scanning Line Effect -->
         <div
           class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent transform -skew-x-12 transition-all duration-1000"
@@ -192,28 +200,40 @@ let techs = ref<IStack[]>([
             tech.isHovering
               ? 'translate-x-full opacity-100'
               : '-translate-x-full opacity-0'
-          " style="animation-delay: 0.2s"></div>
+          "
+          style="animation-delay: 0.2s"
+        ></div>
 
         <!-- Content -->
-        <div class="relative z-10 w-100 flex items-center justify-between">
+        <div class="relative  w-100 flex items-center justify-between">
           <div class="relative">
-            <img :src="tech.url" class="object-contain w-16 h-16 transition-all duration-300 relative z-10" :class="
+            <img
+              :src="tech.url"
+              class="object-contain w-16 h-16 transition-all duration-300 relative "
+              :class="
                 tech.isHovering ? 'scale-110 drop-shadow-lg' : 'scale-100'
-              " :alt="tech.techName" />
+              "
+              :alt="tech.techName"
+            />
           </div>
           <div>
-            <p class="text-lg font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">
+            <p
+              class="text-lg font-semibold text-gray-800 group-hover:text-white transition-colors duration-300"
+            >
               {{ tech.techName }}
             </p>
           </div>
         </div>
 
         <!-- Corner Accent Lines -->
-        <div class="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-white-400/50 transition-all duration-300"
-          :class="tech.isHovering ? 'opacity-100' : 'opacity-0'"></div>
+        <div
+          class="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-white-400/50 transition-all duration-300"
+          :class="tech.isHovering ? 'opacity-100' : 'opacity-0'"
+        ></div>
         <div
           class="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-white-400/50 transition-all duration-300"
-          :class="tech.isHovering ? 'opacity-100' : 'opacity-0'"></div>
+          :class="tech.isHovering ? 'opacity-100' : 'opacity-0'"
+        ></div>
       </div>
     </div>
   </section>

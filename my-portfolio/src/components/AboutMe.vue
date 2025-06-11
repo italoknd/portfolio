@@ -18,7 +18,7 @@
             class="text-center md:text-left text-2xl font-semibold text-gray-800 md:fade-in fade-in-mobile"
           >
             <span class="text-[var(--light-mode-composition-color)]"
-              >Front-end</span
+              >Fullstack</span
             >
             Developer
           </h1>

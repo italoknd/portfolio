@@ -5,3 +5,8 @@ export interface ICardsInfos {
   quick_access_link: string;
   project_on_github: string;
 }
+
+export interface INavItems {
+  itemName: string;
+  hrefName: string;
+}
