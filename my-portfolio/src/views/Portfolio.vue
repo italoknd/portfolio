@@ -7,9 +7,9 @@ import Skills from "../components/Skills.vue";
 <template>
   <div>
     <div class="border-[0.5px] border-gray-600"></div>
-    <AboutMe class="my-5 p-4" />
+    <AboutMe class="my-12 p-4" />
     <div class="border-[0.5px] border-gray-600"></div>
-    <Skills class="my-5 p-4" />
+    <Skills class="p-4" />
     <!-- 
     <MyProjects />
     <Contact /> -->

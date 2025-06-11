@@ -4,7 +4,7 @@ import Portfolio from "./views/Portfolio.vue";
 </script>
 
 <template>
-  <div>
+  <div class="select-none">
     <Navbar />
     <Portfolio />
   </div>
