@@ -7,6 +7,7 @@
       <div class="flex justify-end items-center leading-relaxed max-w-2xl">
         <div>
           <h2
+            class="text-center md:text-left text-2xl md:text-4xl font-semibold text-gray-800 md:fade-in fade-in-mobile">
             <span>Italo </span>
             <span class="text-[var(--light-mode-composition-color)]">Pedroza</span>
           </h2>
