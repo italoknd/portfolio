@@ -45,11 +45,6 @@ const openSideMenu = (stts: boolean) => {
           v-if="!showSideMenuOptions"
           v-html="icon.hamburger(20, '#1E2939')"
         />
-        <span
-          v-else
-          v-html="icon.x(20, '#1E2939')"
-          @click="openSideMenu(false)"
-        />
         <SideMenu
           class="absolute"
           @close="openSideMenu"
@@ -59,5 +54,3 @@ const openSideMenu = (stts: boolean) => {
     </div>
   </n-page-header>
 </template>
-
-<style scoped></style>
