@@ -1,18 +1,27 @@
 <template>
-  <section id="about-me">
+  <section>
     <div class="grid md:grid-cols-2">
       <div>
-        <Animation class="m-auto h-[300px] w-[300px] md:h-[800px] md:w-[800px]" />
+        <Animation
+          class="m-auto h-[300px] w-[300px] md:h-[800px] md:w-[800px]"
+        />
       </div>
       <div class="flex justify-end items-center leading-relaxed max-w-2xl">
         <div>
           <h2
-            class="text-center md:text-left text-2xl md:text-4xl font-semibold text-gray-800 md:fade-in fade-in-mobile">
+            class="text-center md:text-left text-2xl md:text-4xl font-semibold text-gray-800 md:fade-in fade-in-mobile"
+          >
             <span>Italo </span>
-            <span class="text-[var(--light-mode-composition-color)]">Pedroza</span>
+            <span class="text-[var(--light-mode-composition-color)]"
+              >Pedroza</span
+            >
           </h2>
-          <h1 class="text-center md:text-left text-2xl font-semibold text-gray-800 md:fade-in fade-in-mobile">
-            <span class="text-[var(--light-mode-composition-color)]">Fullstack</span>
+          <h1
+            class="text-center md:text-left text-2xl font-semibold text-gray-800 md:fade-in fade-in-mobile"
+          >
+            <span class="text-[var(--light-mode-composition-color)]"
+              >Fullstack</span
+            >
             Developer
           </h1>
           <div class="text-gray-800 font-medium mt-2">

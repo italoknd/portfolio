@@ -3,11 +3,11 @@ import { INavItems } from "../interface";
 export const items: INavItems[] = [
   {
     itemName: "Home",
-    hrefName: "#home",
+    hrefName: "",
   },
   {
     itemName: "About me",
-    hrefName: "#about-me",
+    hrefName: "#home",
   },
   {
     itemName: "Skills",
