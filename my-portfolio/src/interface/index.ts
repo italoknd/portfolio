@@ -10,3 +10,10 @@ export interface INavItems {
   itemName: string;
   hrefName: string;
 }
+
+export interface IStack {
+  url: string;
+  techName: string;
+  predominantColorOnHover: string;
+  isHovering: boolean;
+}
