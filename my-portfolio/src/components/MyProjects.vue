@@ -1,7 +1,9 @@
 <template>
-  <div >
+  <div id="projects">
     <div>
-      <h2 class="text-2xl md:text-4xl font-semibold text-blue-600 mb-4 text-center md:text-left">
+      <h2
+        class="text-2xl md:text-4xl font-semibold text-[var(--light-mode-composition-color)] mb-4 text-center md:text-left"
+      >
         Projects
       </h2>
     </div>
@@ -40,7 +42,7 @@
       </div>
     </section> -->
 
-    <div class=" justify-center grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="justify-center grid md:grid-cols-2 lg:grid-cols-4 gap-5">
       <Card v-for="(card, index) in cards" :key="index" :card="card" />
     </div>
 
