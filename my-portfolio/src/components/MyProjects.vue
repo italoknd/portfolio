@@ -58,13 +58,13 @@ const cards = ref<ICardsInfos[]>(cards_infos);
 const show_notification = ref<boolean>(false);
 
 //FUNCTIONS
-const checkIfHasAccessLink = (param: boolean) => {
-  !param ? (show_notification.value = true) : null;
+// const checkIfHasAccessLink = (param: boolean) => {
+//   !param ? (show_notification.value = true) : null;
 
-  setTimeout(() => {
-    show_notification.value = false;
-  }, 4000);
-};
+//   setTimeout(() => {
+//     show_notification.value = false;
+//   }, 4000);
+// };
 </script>
 <style scoped>
 .project-btn {
