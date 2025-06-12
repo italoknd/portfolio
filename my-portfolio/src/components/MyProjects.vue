@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <section id="projects">
+  <div >
+    <div>
+      <h2 class="text-2xl md:text-4xl font-semibold text-blue-600 mb-4 text-center md:text-left">
+        Projects
+      </h2>
+    </div>
+    <!-- <section id="projects">
       <h1 class="section-header">Projects</h1>
 
       <div class="main-projects-container">
@@ -33,12 +38,17 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <div class=" justify-center grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <Card v-for="(card, index) in cards" :key="index" :card="card" />
+    </div>
 
     <Notification v-if="show_notification" />
   </div>
 </template>
 <script setup lang="ts">
+import Card from "./Card.vue";
 import Notification from "./Notification.vue";
 import { cards_infos } from "../scripts/cards_info";
 import { ICardsInfos } from "../interface";
