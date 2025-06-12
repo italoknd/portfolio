@@ -4,6 +4,7 @@ export interface ICardsInfos {
   has_access_link: boolean;
   quick_access_link: string;
   project_on_github: string;
+  screenshot: string;
 }
 
 export interface INavItems {

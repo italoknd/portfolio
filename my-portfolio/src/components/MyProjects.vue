@@ -52,11 +52,11 @@
 <script setup lang="ts">
 import Card from "./Card.vue";
 import Notification from "./Notification.vue";
-import { cards_infos } from "../scripts/cards_info";
+import projects from "../../projects.json";
 import { ICardsInfos } from "../interface";
 import { ref } from "vue";
 
-const cards = ref<ICardsInfos[]>(cards_infos);
+const cards = ref<ICardsInfos[]>(projects as ICardsInfos[]);
 const show_notification = ref<boolean>(false);
 
 //FUNCTIONS

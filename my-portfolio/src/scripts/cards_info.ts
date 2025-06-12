@@ -1,6 +1,8 @@
-export const cards_infos = [
+import { ICardsInfos } from "../interface";
+export const cards_infos: ICardsInfos = [
   {
     project_title: "File Uploader",
+    screenshot: "/assets/projects-screenshots/file-uploader.png",
     short_description:
       "<p>The file uploader was a project where I've used Vue 3 with Composition API TypeScript and Vite. In this project I've learned more about drag and drop events.</p> <br/> <p>The UI inspiration came from some images of other file uploaders that I've seen on the internet and the purpose of this project in the future is to let it be available on NPM as a plugin where other developers can use to handle files, transforming them into base 64 files on upload without much struggle.</p>",
     has_access_link: true,
