@@ -1,22 +1,34 @@
 <template>
   <section id="home">
-    <div class="grid md:grid-cols-2">
+    <div class="grid lg:grid-cols-2 lg:gap-5 md:justify-center">
       <div>
-        <Animation class="m-auto h-[300px] w-[300px] md:h-[800px] md:w-[800px]" />
+        <Animation
+          class="m-auto h-[300px] w-[300px] md:h-[550px] md:w-[550px]"
+        />
       </div>
-      <div class="flex justify-end items-center leading-relaxed max-w-2xl">
-        <div>
+      <div class="flex justify-end items-center w-full">
+        <div class="ml-auto p-6 lg:max-w-xl w-full">
           <h2
-            class="text-center md:text-left text-2xl md:text-4xl font-semibold text-gray-800 md:fade-in fade-in-mobile">
-            <span>Italo </span>
-            <span class="text-[var(--light-mode-composition-color)]">Pedroza</span>
+            class="text-2xl md:text-4xl font-semibold text-gray-800 text-center lg:text-left"
+          >
+            <span class="fade-in-mobile lg:fade-in">Italo </span>
+            <span
+              class="fade-in-mobile lg:fade-in text-[var(--light-mode-composition-color)]"
+              >Pedroza</span
+            >
           </h2>
-          <h1 class="text-center md:text-left text-2xl font-semibold text-gray-800 md:fade-in fade-in-mobile">
-            <span class="text-[var(--light-mode-composition-color)]">Fullstack</span>
+          <h1
+            class="fade-in-mobile text-2xl md:text-4xl font-semibold text-gray-800 text-center lg:text-left"
+          >
+            <span class="text-[var(--light-mode-composition-color)]"
+              >Fullstack</span
+            >
             Developer
           </h1>
-          <div class="text-gray-800 font-medium mt-2">
-            <p class="description-fade-in">
+          <div
+            class="text-gray-800 font-medium mt-2 text-justify fade-in-mobile"
+          >
+            <p>
               Hello! Welcome. I am a front-end developer and here you will find
               some of the projects that I have been building with dedication,
               creativity and that touch of curiosity that every dev carries.
