@@ -4,17 +4,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--main-color);
+  background: var(--text-hover);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--composition-color);
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--composition-color-hover);
-  cursor: pointer;
+  cursor: grab;
 }
