@@ -6,6 +6,8 @@ import * as icon from "../icons";
 
 import SideMenu from "./SideMenu.vue";
 
+import { scrollTo } from "../utils";
+
 onMounted(() => window.addEventListener("resize", updateWidth));
 onUnmounted(() => window.removeEventListener("resize", updateWidth));
 
@@ -24,22 +26,40 @@ const openSideMenu = (stts: boolean) => {
 <template>
   <n-page-header class="p-3 md:p-5 w-full z-20 fixed bg-white shadow-xl">
     <div class="flex justify-between items-center">
-      <h2 class="text-2xl md:text-4xl font-semibold text-gray-800">
-        Port<span class="text-[var(--light-mode-composition-color)]">folio
+      <h2
+        @click="scrollTo('#home')"
+        class="cursor-pointer text-2xl md:text-4xl font-semibold text-gray-800"
+      >
+        Port<span class="text-[var(--light-mode-composition-color)]"
+          >folio
         </span>
       </h2>
       <ul v-if="windowWidth > 768" class="flex justify-end gap-4 items-center">
-        <li v-for="(item, index) in navItems" :key="index">
-          <a :href="item.hrefName">
+        <li
+          v-for="(item, index) in navItems"
+          :key="index"
+          @click="scrollTo(item.hrefName)"
+          class="cursor-pointer"
+        >
+          <a>
             <span
-              class="text-gray-800 hover:text-[var(--light-mode-composition-color)] font-semibold hover:underline hover:duration-300 hover:underline-[--light-mode-composition-color)]">{{
-              item.itemName }}</span>
+              class="text-gray-800 hover:text-[var(--light-mode-composition-color)] font-semibold hover:underline hover:duration-300 hover:underline-[--light-mode-composition-color)]"
+              >{{ item.itemName }}</span
+            >
           </a>
         </li>
       </ul>
       <div v-else class="cursor-pointer">
-        <span @click="openSideMenu(true)" v-if="!showSideMenuOptions" v-html="icon.hamburger(20, '#1E2939')" />
-        <SideMenu class="absolute" @close="openSideMenu" :showSideMenuOptions="showSideMenuOptions" />
+        <span
+          @click="openSideMenu(true)"
+          v-if="!showSideMenuOptions"
+          v-html="icon.hamburger(20, '#1E2939')"
+        />
+        <SideMenu
+          class="absolute"
+          @close="openSideMenu"
+          :showSideMenuOptions="showSideMenuOptions"
+        />
       </div>
     </div>
   </n-page-header>
