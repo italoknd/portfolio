@@ -30,21 +30,5 @@
     "has_access_link": true,
     "quick_access_link": "https://make-your-burger-owlwsv4hy-italoknd.vercel.app/",
     "project_on_github": "https://github.com/italoknd/projeto-make-your-burger"
-  },
-  {
-    "project_title": "Photograph Website",
-    "screenshot": "./src/assets/projects-screenshots/photograph-site.png",
-    "short_description": "That was a simple project where I learnt about the fundamentals of flexbox",
-    "has_access_link": true,
-    "quick_access_link": "https://site-fotografia-p7bjun8ui-italoknd.vercel.app/",
-    "project_on_github": "https://github.com/italoknd/site-fotografia/tree/main/estilos"
-  },
-  {
-    "project_title": "Todo list",
-    "screenshot": "./src/assets/projects-screenshots/todo-list.png",
-    "short_description": "This project is a simple todo list made with HTML, CSS and JS.",
-    "has_access_link": true,
-    "quick_access_link": "https://to-do-list-beta-nine.vercel.app/",
-    "project_on_github": "https://github.com/italoknd/To-do-list-com-JavaScript"
   }
 ]

@@ -40,16 +40,6 @@
 <script setup lang="ts">
 import { ICardsInfos } from "../interface";
 import { github, link } from "../icons";
+import { openLink } from "../utils";
 defineProps<{ card: ICardsInfos }>();
-
-const openLink = (ref: string) => {
-  const link = document.createElement("a");
-  link.href = ref;
-  link.target = "_blank";
-  link.rel = "next";
-
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
 </script>

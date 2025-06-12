@@ -4,3 +4,14 @@ export const scrollTo = (id: string) => {
 
   window.scrollTo({ top: y, behavior: "smooth" });
 };
+
+export const openLink = (ref: string) => {
+  const link = document.createElement("a");
+  link.href = ref;
+  link.target = "_blank";
+  link.rel = "next";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
