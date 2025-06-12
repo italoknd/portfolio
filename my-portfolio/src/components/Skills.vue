@@ -9,7 +9,8 @@ let techs = ref<IStack[]>(skills);
 <template>
   <section class="bg-gray-50">
     <div id="skills">
-      <h2 class="text-2xl md:text-4xl font-semibold text-blue-600 mb-4 text-center md:text-left">
+      <h2
+        class="text-2xl md:text-4xl font-semibold text-[var(--light-mode-composition-color)] mb-4 text-center md:text-left">
         Skills
       </h2>
     </div>

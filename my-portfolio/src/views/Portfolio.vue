@@ -6,7 +6,7 @@ import MyProjects from "../components/MyProjects.vue";
 </script>
 <template>
   <div>
-    <AboutMe class="my-12 p-4" />
+    <AboutMe class="p-4" />
     <div class="border-[0.5px] border-gray-600"></div>
     <Skills class="p-4" />
     <div class="border-[0.5px] border-gray-600"></div>
