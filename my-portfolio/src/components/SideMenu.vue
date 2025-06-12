@@ -1,15 +1,26 @@
 <template>
-  <div @touchstart="onTouchStart" @touchmove="onTouchMove" @touchend="onTouchEnd" id="sidemenu"
+  <div
+    @touchstart="onTouchStart"
+    @touchmove="onTouchMove"
+    @touchend="onTouchEnd"
+    id="sidemenu"
     class="bg-[var(--light-mode-composition-color)] menu-open text-white fixed h-full w-[200px] right-0 top-0 z-20 menu-shadow"
     :class="{
       hidden: !isClosing && !showSideMenuOptions,
-    }" :style="{
+    }"
+    :style="{
       transform: `translateX(${offsetX}px)`,
       transition: isDragging ? 'none' : 'transform 0.3s ease-in-out',
-    }">
+    }"
+  >
     <ul>
-      <li class="p-2 text-left" v-for="(item, index) in sideMenuItems" :key="index" @click="closeMenu">
-        <a :href="item.hrefName">
+      <li
+        class="p-2 text-left"
+        v-for="(item, index) in sideMenuItems"
+        :key="index"
+        @click="closeMenu(item.hrefName)"
+      >
+        <a>
           <span>{{ item.itemName }}</span>
         </a>
       </li>
@@ -21,6 +32,7 @@
 import { ref, watch } from "vue";
 import { INavItems } from "../interface";
 import { items } from "../scripts/nav_items";
+import { scrollTo } from "../utils";
 
 //PROPS & EMITS
 const { showSideMenuOptions } = defineProps<{ showSideMenuOptions: boolean }>();
@@ -71,7 +83,7 @@ const onTouchEnd = () => {
   offsetX.value = 0; // anima de volta se não passou do threshold
 };
 
-const closeMenu = () => {
+const closeMenu = (href: string = "") => {
   const el = document.querySelector("#sidemenu") as HTMLElement;
   el.classList.add("menu-closing");
 
@@ -79,6 +91,10 @@ const closeMenu = () => {
     emit("close", false);
     isClosing.value = false;
   }, 300);
+
+  if (href) {
+    scrollTo(href);
+  }
 };
 </script>
 
