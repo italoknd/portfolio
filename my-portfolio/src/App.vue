@@ -6,8 +6,6 @@ import Portfolio from "./views/Portfolio.vue";
 <template>
   <div class="select-none">
     <Navbar />
-    <Portfolio />
+    <Portfolio class="absolute mt-12" />
   </div>
 </template>
-
-<style scoped></style>
