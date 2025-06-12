@@ -15,7 +15,7 @@
   >
     <ul>
       <li
-        class="p-2 text-left"
+        class="pl-3 p-2 text-left font-semibold"
         v-for="(item, index) in sideMenuItems"
         :key="index"
         @click="closeMenu(item.hrefName)"

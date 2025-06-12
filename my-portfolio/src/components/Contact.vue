@@ -1,5 +1,5 @@
 <template>
-  <section id="get-in-touch" class="bg-white py-16 px-4 md:px-8">
+  <section id="get-in-touch" class="bg-white py-8 px-4 md:px-8">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
         Contact
