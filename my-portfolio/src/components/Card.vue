@@ -3,7 +3,7 @@
     class="md:max-w-sm md:mx-auto lg:mx-0 bg-white rounded-md shadow-xl overflow-hidden transition hover:shadow-2xl"
   >
     <img
-      src="https://images.unsplash.com/photo-1745434038429-3bb5a1a9a383?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      :src="card?.screenshot"
       alt="Project Cover"
       class="w-full h-48 object-cover object-center"
     />
@@ -22,11 +22,13 @@
       <!-- Botões -->
       <div class="grid grid-cols-2 gap-3">
         <button
+          @click="openLink(card.quick_access_link)"
           class="cursor-pointer flex-1 px-4 py-2 rounded-sm text-white font-medium transition duration-300 bg-[var(--light-mode-composition-color)] hover:bg-[var(--light-mode-composition-color)]/85 flex justify-center gap-2"
         >
           <span v-html="link(23)" /><span>Website</span>
         </button>
         <button
+          @click="openLink(card.project_on_github)"
           class="cursor-pointer flex-1 px-4 py-2 rounded-sm border duration-300 text-white transition bg-gray-800 hover:bg-gray-800/90 flex justify-center gap-2"
         >
           <span v-html="github()" /><span>GitHub</span>
@@ -39,4 +41,15 @@
 import { ICardsInfos } from "../interface";
 import { github, link } from "../icons";
 defineProps<{ card: ICardsInfos }>();
+
+const openLink = (ref: string) => {
+  const link = document.createElement("a");
+  link.href = ref;
+  link.target = "_blank";
+  link.rel = "next";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 </script>
