@@ -18,7 +18,7 @@
   {
     "project_title": "File Uploader",
     "screenshot": "./src/assets/projects-screenshots/file-uploader-2.png",
-    "short_description": "<p>The file uploader was a project where I've used Vue 3 with Composition API TypeScript and Vite. In this project I've learned more about drag and drop events.</p> <br/> <p>The UI inspiration came from some images of other file uploaders that I've seen on the internet and the purpose of this project in the future is to let it be available on NPM as a plugin where other developers can use to handle files, transforming them into base 64 files on upload without much struggle.</p>",
+    "short_description": "<p>The file uploader was a project where I've used Vue 3 with Composition API TypeScript and Vite. In this project I've learned more about drag and drop events.</p> <br/> <p>The UI inspiration came from some images of other file uploaders that I've seen on the internet and the purpose of this project in the future is to let it be available on NPM as a plugin where other developers can use to handle files, transforming them into base 64 files on upload without much struggle.</p><p class='font-semibold text-lg mt-4'>Techs used:</p> <ul class='list-disc list-inside p-2 text-gray-800'><li>Vue 3 + Composition API</li><li>TypeScript</li></ul>",
     "has_access_link": true,
     "quick_access_link": "https://italoknd.github.io/vue-drag-and-drop/",
     "project_on_github": "https://github.com/italoknd/vue-drag-and-drop"
