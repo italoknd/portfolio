@@ -26,14 +26,20 @@ const openSideMenu = (stts: boolean) => {
 <template>
   <n-page-header class="p-3 md:p-5 w-full z-20 fixed bg-white shadow-xl">
     <div class="flex justify-between items-center">
-      <h2
+      <!-- <h2
         @click="scrollTo('#home')"
         class="cursor-pointer text-2xl md:text-4xl font-semibold text-gray-800"
       >
         Port<span class="text-[var(--light-mode-composition-color)]"
           >folio
         </span>
-      </h2>
+      </h2> -->
+      <img
+        @click="scrollTo('#home')"
+        src="../assets/logo-3-cropped.png"
+        alt="Logo"
+        class="cursor-pointer object-contain w-12 h-12 md:w-11 md:h-11 transition-all duration-300 relative"
+      />
       <ul v-if="windowWidth > 768" class="flex justify-end gap-4 items-center">
         <li
           v-for="(item, index) in navItems"
