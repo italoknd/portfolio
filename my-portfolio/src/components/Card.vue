@@ -5,12 +5,12 @@
     <img
       :src="card?.screenshot"
       alt="Project Cover"
-      class="w-full h-48 object-cover object-center"
+      class="w-full  h-48 object-cover object-center"
     />
 
     <!-- Conteúdo -->
     <div class="p-4 space-y-4">
-      <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">
+      <h3 class="text-2xl font-semibold text-gray-900 ">
         {{ card.project_title }}
       </h3>
 

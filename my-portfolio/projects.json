@@ -25,7 +25,7 @@
   },
   {
     "project_title": "Make Your Burger",
-    "screenshot": "./src/assets/projects-screenshots/make-ur-burger.png",
+    "screenshot": "https://user-images.githubusercontent.com/74671728/163704192-8f83a937-6ff8-47a1-b293-0c0c847073bb.png",
     "short_description": "That was the final project of a course that I did on youtube about Vue JS (When I had the first contact with this technology). In this project is possible to make some API requests using an fake API (hehehe) like order something, edit or delete an order.",
     "has_access_link": true,
     "quick_access_link": "https://make-your-burger-owlwsv4hy-italoknd.vercel.app/",
