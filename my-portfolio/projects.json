@@ -1,7 +1,7 @@
 [
   {
     "project_title": "Spotify Clone",
-    "screenshot": "https://github.com/italoknd/SPOTIFY-CLONE-WITH-VUE-TAILWIND-PINIA/raw/main/spotify-clone-with-vue-tailwind-and-pinia/assets/readme-images/album.png",
+    "screenshot": "https://github.com/italoknd/SPOTIFY-CLONE-WITH-VUE-TAILWIND-PINIA/raw/main/spotify-clone-with-vue-tailwind-and-pinia/public/readme-images/album.png",
     "short_description": "<p>Fully-featured interface inspired by Spotify. Includes playlist navigation, music playback, and library organization. Demonstrates advanced frontend architecture skills and strong focus on UI/UX.</p><p class='font-semibold text-lg mt-4'>Techs used:</p> <ul class='list-disc list-inside p-2 text-gray-800'><li>Vue 3 + Composition API</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Naive UI</li><li>Pinia</li><li>Vue Router</li></ul>",
     "has_access_link": true,
     "quick_access_link": "https://spotify-clone-with-vue-tailwind-pinia.vercel.app/#/",
@@ -9,7 +9,7 @@
   },
   {
     "project_title": "Apple iPhone 15 Clone",
-    "screenshot": "./assets/projects-screenshots/apple-site.png",
+    "screenshot": "./public/assets/projects-screenshots/apple-site.png",
     "short_description": "<p>Immersive 3D experience featuring an interactive iPhone model. Showcases cutting-edge animations, smooth transitions, and modern UI/UX practices focused on engagement and visual impact.</p><p class='font-semibold text-lg mt-4'>Techs used:</p><ul class='list-disc list-inside p-2 text-gray-800'><li>React.js</li><li>Three.js</li><li>GSAP</li><li>Tailwind CSS</li><li>Vite</li></ul>",
     "has_access_link": true,
     "quick_access_link": "https://apple-website-clone-tan.vercel.app/",
@@ -17,7 +17,7 @@
   },
   {
     "project_title": "Rick and Morty Explorer",
-    "screenshot": "./assets/projects-screenshots/rick-and-morty-explorer.png",
+    "screenshot": "./public/assets/projects-screenshots/rick-and-morty-explorer.png",
     "short_description": "<p>Interface developed with <strong>Vue 3, TypeScript,</strong> and <strong>Quasar</strong> to explore data from the Rick and Morty series <strong>using the official GraphQL API</strong>. Includes dynamic filters, pagination, and listings of episodes and locations, with a responsive layout and scalable architecture.</p> <p class='font-semibold text-lg mt-4'>Techs used:</p> <ul class='list-disc list-inside p-2 text-gray-800'><li>Vue</li><li>TypeScript</li><li>Vite</li><li>Quasar Framework</li><li>GraphQL</li><li>Axios</li><li>Pinia</li><li>Vue Router</li></ul>",
     "has_access_link": true,
     "quick_access_link": "https://rick-and-morty-challenge-zeta.vercel.app/#/characters",
@@ -25,7 +25,7 @@
   },
   {
     "project_title": "File Uploader",
-    "screenshot": "./assets/projects-screenshots/file-uploader-2.png",
+    "screenshot": "./public/assets/projects-screenshots/file-uploader-2.png",
     "short_description": "<p>The file uploader was a project where I've used Vue 3 with Composition API TypeScript and Vite. In this project I've learned more about drag and drop events.</p> <br/> <p>The UI inspiration came from some images of other file uploaders that I've seen on the internet and the purpose of this project in the future is to let it be available on NPM as a plugin where other developers can use to handle files, transforming them into base 64 files on upload without much struggle.</p><p class='font-semibold text-lg mt-4'>Techs used:</p> <ul class='list-disc list-inside p-2 text-gray-800'><li>Vue 3 + Composition API</li><li>TypeScript</li></ul>",
     "has_access_link": true,
     "quick_access_link": "https://italoknd.github.io/vue-drag-and-drop/",
