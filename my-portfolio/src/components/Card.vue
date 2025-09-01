@@ -5,19 +5,34 @@
     <img
       :src="card?.screenshot"
       alt="Project Cover"
-      class="w-full  h-48 object-cover object-center"
+      class="w-full h-48 object-cover object-center"
     />
 
     <!-- Conteúdo -->
     <div class="p-4 space-y-4">
-      <h3 class="text-2xl font-semibold text-gray-900 ">
+      <h3 class="text-2xl font-semibold text-gray-900">
         {{ card.project_title }}
       </h3>
 
       <p
-        class="text-gray-800 text-sm leading-relaxed border h-[200px] overflow-y-auto rounded-sm p-2"
+        class="text-gray-800 text-sm leading-relaxed border h-[150px] overflow-y-auto rounded-sm p-2"
         v-html="card.short_description"
       />
+
+      <div>
+        <p class="font-semibold mb-1">Techs used:</p>
+        <div
+          class="tech-scroll flex items-center gap-2 overflow-x-auto flex-nowrap py-1"
+        >
+          <img
+            v-for="(src, i) in card.techs"
+            :key="i"
+            :src="src"
+            alt="Tech used"
+            class="h-8 w-8 shrink-0"
+          />
+        </div>
+      </div>
 
       <!-- Botões -->
       <div class="grid grid-cols-2 gap-3">
@@ -43,3 +58,27 @@ import { github, link } from "../icons";
 import { openLink } from "../utils";
 defineProps<{ card: ICardsInfos }>();
 </script>
+<style scoped>
+.tech-scroll {
+  display: flex;
+  align-items: center;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0.25rem 0;
+
+  scrollbar-width: thin;
+}
+
+@media (max-width: 768px) {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+</style>

@@ -68,6 +68,18 @@ export const skills: IStack[] = [
     isHovering: false,
   },
   {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain-wordmark.svg",
+    techName: "GraphQL",
+    predominantColorOnHover: "hover:text-white hover:bg-[#CF40A1]/50",
+    isHovering: false,
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain-wordmark.svg",
+    techName: "Axios",
+    predominantColorOnHover: "hover:text-white hover:bg-[#5A29E4]/50",
+    isHovering: false,
+  },
+  {
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png",
     techName: "Tailwind CSS",
     predominantColorOnHover: "hover:text-white hover:bg-[#35BEF8]/60",
@@ -122,6 +134,18 @@ export const skills: IStack[] = [
     isHovering: false,
   },
   {
+    url: "https://gsap.com/community/uploads/monthly_2020_03/tweenmax.png.cf27916e926fbb328ff214f66b4c8429.png",
+    techName: "GSAP",
+    predominantColorOnHover: "hover:text-white hover:bg-[#2e2e2e]/80",
+    isHovering: false,
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
+    techName: "Three JS",
+    predominantColorOnHover: "hover:text-white hover:bg-[#2e2e2e]/80",
+    isHovering: false,
+  },
+  {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     techName: "Git",
     predominantColorOnHover: "hover:text-white hover:bg-[#F34F29]/75",
@@ -157,10 +181,10 @@ export const skills: IStack[] = [
     predominantColorOnHover: "hover:text-white hover:bg-[#ED1B24]/70",
     isHovering: false,
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-    techName: "MySQL",
-    predominantColorOnHover: "hover:text-white hover:bg-[#00618A]/70",
-    isHovering: false,
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+  //   techName: "MySQL",
+  //   predominantColorOnHover: "hover:text-white hover:bg-[#00618A]/70",
+  //   isHovering: false,
+  // },
 ];
