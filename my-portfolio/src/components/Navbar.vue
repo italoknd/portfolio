@@ -26,14 +26,6 @@ const openSideMenu = (stts: boolean) => {
 <template>
   <n-page-header class="p-3 md:p-5 w-full z-20 fixed bg-white shadow-xl">
     <div class="flex justify-between items-center">
-      <!-- <h2
-        @click="scrollTo('#home')"
-        class="cursor-pointer text-2xl md:text-4xl font-semibold text-gray-800"
-      >
-        Port<span class="text-[var(--light-mode-composition-color)]"
-          >folio
-        </span>
-      </h2> -->
       <img
         @click="scrollTo('#home')"
         src="../assets/logo-3-cropped.png"
